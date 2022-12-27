@@ -1,0 +1,349 @@
+.gradient-color {
+  background             : linear-gradient(334.16deg, #9A732B 0%, #F0BD51 13%, #FEEC6E 31%, #DD9C2B 68%, #FCD755 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip        : text;
+}
+
+.section {
+  padding: 1% 4%;
+}
+
+.steps-title {
+  font-weight: 900;
+  font-size  : 44px;
+  line-height: 58px;
+  color      : #FFFFFF;
+  margin     : 0;
+  padding    : 0;
+}
+
+.steps-yellow-title {
+  font-size: 54px;
+
+}
+
+.features-title {
+  font-weight: 900;
+  font-size  : 38px;
+  line-height: 58px;
+  color      : #FFFFFF;
+}
+
+.features-yellow-title {
+  font-size: 44px;
+}
+
+.countdown-title {
+  font-weight: 900;
+  font-size  : 38px;
+  line-height: 58px;
+  color      : #FFFFFF;
+}
+
+.countdown-yellow-title {
+  font-size: 44px;
+}
+
+.normal-text {
+  color      : #FFFFFF;
+  font-size  : 22px;
+  line-height: 39px;
+}
+
+.flex-responsive {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  margin-top     : 2%;
+}
+
+.features-flex-responsive {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+}
+
+.flex-responsive div {
+  list-style: none;
+  flex      : 0 0 33.33333%;
+}
+
+.features-flex-responsive div {
+  list-style: none;
+  flex      : 0 0 33.33333%;
+}
+
+.flex-between {
+  display        : flex;
+  flex-flow      : row;
+  align-items    : center;
+  margin         : 20px 0;
+  justify-content: start;
+}
+
+.flex-column {
+  display        : flex;
+  flex-flow      : column;
+  align-items    : center;
+  margin         : 20px 0;
+  justify-content: center;
+  text-align     : center;
+}
+
+.flex-column img {
+  width: 35%;
+}
+
+.flex-column p {
+  font-style : italic;
+  font-weight: 900;
+  font-size  : 28px;
+  line-height: 39px;
+}
+
+.learn-section {
+  display        : flex;
+  flex-flow      : row;
+  align-items    : center;
+  margin         : 10px 0;
+  justify-content: space-between;
+}
+
+.countdown-section {
+  display        : flex;
+  flex-flow      : row;
+  align-items    : center;
+  margin         : 10px 0;
+  justify-content: space-between;
+}
+
+.learn-text {
+  width: 45%;
+}
+
+.img {
+  width: 60%;
+}
+
+.learn-img {
+  width: 45%;
+}
+
+.countdown-text {
+  font-style    : italic;
+  color         : white;
+  font-weight   : 900;
+  font-size     : 44px;
+  line-height   : 10px;
+  text-transform: uppercase;
+}
+
+.countdown-word {
+  font-weight   : 900;
+  font-size     : 38px;
+  line-height   : 30px;
+  text-transform: uppercase;
+}
+
+.countdown-button-img {
+  width     : 60%;
+  margin-top: 20px;
+}
+
+.countdown-img {
+  width : 50%;
+  margin: -20% 0 0 -5%;
+}
+
+.learn-button {
+  display: contents;
+}
+
+.countdown-button {
+  display: contents;
+}
+
+@media (min-width:481px) and (max-width:768px) {
+  .flex-responsive div {
+    flex: 0 50%;
+  }
+
+  .features-flex-responsive div {
+    flex: 0 50%;
+  }
+
+  .img {
+    width: 60%;
+  }
+
+  .title {
+    font-size  : 36px;
+    line-height: 44px;
+  }
+
+  .yellow-title {
+    font-size: 38px;
+  }
+
+  .learn-text {
+    width: 100%;
+  }
+
+  .flex-between {
+    justify-content: start;
+    width          : 50%;
+  }
+
+  .learn-section {
+    flex-flow: column;
+  }
+
+  .learn-img {
+    width     : 100%;
+    margin-top: -50px;
+  }
+
+  .features-title {
+    font-size: 32px;
+  }
+
+  .features-yellow-title {
+    font-size: 38px;
+  }
+
+  .countdown-title {
+    font-size: 32px;
+  }
+
+  .countdown-yellow-title {
+    font-size: 38px;
+  }
+
+  .countdown-img {
+    width : 60%;
+    margin: -25% 0 0 -10%;
+  }
+
+  .countdown-button-img {
+    width: 100%;
+
+  }
+
+  .countdown-text {
+    font-size: 28px;
+  }
+
+  .countdown-word {
+    font-size: 32px;
+  }
+}
+
+@media (max-width:481px) {
+  .flex-responsive div {
+    flex: 60%;
+  }
+
+  .steps-title {
+    font-size  : 24px;
+    line-height: 35px;
+  }
+
+  .steps-yellow-title {
+    font-size: 32px;
+  }
+
+  .flex-column img {
+    width: 50%;
+  }
+
+  .flex-column p {
+    font-size  : 14px;
+    line-height: 17px;
+  }
+
+  .features-flex-responsive div {
+    flex: 40%;
+  }
+
+  .img {
+    width: 45%;
+  }
+
+  .title {
+    font-size  : 20px;
+    line-height: 24px;
+  }
+
+  .countdown-section {
+    flex-flow: column;
+  }
+
+  .yellow-title {
+    font-size: 24px;
+  }
+
+  .learn-text {
+    width: 100%;
+  }
+
+  .normal-text {
+    font-size  : 20px;
+    line-height: 24px;
+  }
+
+  .flex-between {
+    justify-content: start;
+  }
+
+  .learn-section {
+    flex-flow: column;
+  }
+
+  .learn-img {
+    width: 100%;
+  }
+
+  .features-title {
+    font-size  : 24px;
+    line-height: 30px;
+  }
+
+  .features-yellow-title {
+    font-size: 28px;
+  }
+
+  .countdown-title {
+    font-size  : 18px;
+    line-height: 30px;
+  }
+
+  .countdown-yellow-title {
+    font-size: 20px;
+  }
+
+  .countdown-section {
+    align-items: start;
+  }
+
+  .countdown-img {
+    width : 80%;
+    margin: -30% 0 0 -15%;
+  }
+
+  .countdown-text {
+    font-size: 24px;
+  }
+
+  .countdown-word {
+    font-size    : 28px;
+    margin-top   : -20px;
+    margin-bottom: 10px;
+  }
+
+  .countdown-button-img {
+    width     : 100%;
+    margin-top: 0px;
+
+  }
+}
