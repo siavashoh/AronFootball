@@ -41,6 +41,13 @@
   color      : #FFFFFF;
 }
 
+.choice-title {
+  font-weight: 900;
+  font-size  : 34px;
+  line-height: 58px;
+  color      : #FFFFFF;
+}
+
 .countdown-yellow-title {
   font-size: 44px;
 }
@@ -238,6 +245,10 @@
   width: 90%;
 }
 
+.choice-img img {
+  width: 100%;
+}
+
 .countdown-text {
   font-style    : italic;
   color         : white;
@@ -277,8 +288,54 @@
     flex: 0 50%;
   }
 
+  .quotes-img {
+    top   : -30px;
+    left  : 60px;
+    height: 90px;
+  }
+
+  .quote {
+    width      : 70%;
+    font-size  : 16px;
+    margin-left: 80px;
+    margin-top : 80px;
+    line-height: 20px;
+  }
+
+  .customer-name {
+    top        : -10px;
+    left       : 140px;
+    font-size  : 20px;
+    line-height: 20px;
+  }
+
+  .quote-date {
+    top      : 5px;
+    left     : 270px;
+    font-size: 16px;
+  }
+
   .quotes-flex-responsive div {
     flex: 0 50%;
+  }
+
+  .quotes-flex-between {
+    height: 300px;
+  }
+
+  .like {
+    bottom: 10px;
+    left  : 90px;
+  }
+
+  .comment {
+    bottom: 10px;
+    left  : 220px;
+  }
+
+  .choice-title {
+    font-size : 28px;
+    text-align: center;
   }
 
   .features-flex-responsive div {
@@ -358,6 +415,10 @@
   .countdown-word {
     font-size: 32px;
   }
+
+  .choice-img {
+    width: 80%;
+  }
 }
 
 @media (max-width:481px) {
@@ -365,13 +426,22 @@
     flex: 60%;
   }
 
+  .choice-title {
+    font-size  : 20px;
+    line-height: 30px;
+  }
+
   .steps-title {
     font-size  : 24px;
     line-height: 35px;
   }
 
+  .choice-img {
+    width: 90%;
+  }
+
   .choice-section {
-    flex-flow  : column;
+    flex-flow: column;
   }
 
   .steps-yellow-title {
@@ -474,5 +544,59 @@
     width     : 100%;
     margin-top: 0px;
 
+  }
+
+  .quotes-img {
+    top   : -30px;
+    left  : 40px;
+    height: 90px;
+  }
+
+  .quote {
+    width      : 65%;
+    font-size  : 14px;
+    line-height: 15px;
+    margin-left: 50px;
+    margin-top : 65px;
+  }
+
+  .customer-name {
+    top        : -5px;
+    left       : 120px;
+    line-height: 20px;
+    font-size  : 16px;
+  }
+
+  .quote-date {
+    top      : 5px;
+    left     : 210px;
+    font-size: 14px;
+  }
+
+  .quotes-flex-responsive div {
+    flex  : 60%;
+    margin: 10px 10px;
+  }
+
+  .quotes-flex-responsive {
+    margin-left: 0px;
+  }
+
+  .quotes-flex-between {
+    height: 290px;
+  }
+
+  .like {
+    bottom: 15%;
+    left  : 60px;
+  }
+
+  .reactions {
+    font-size: 14px;
+  }
+
+  .comment {
+    bottom: 15%;
+    left  : 160px;
   }
 }
