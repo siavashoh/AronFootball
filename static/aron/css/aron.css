@@ -5,8 +5,16 @@
   background-clip        : text;
 }
 
+.negative {
+  color: #ff0000;
+}
+
+.Positive {
+  color: #00FF0A;
+}
+
 .section {
-  padding: 1% 4%;
+  padding: 2% 4%;
 }
 
 .steps-title {
@@ -102,6 +110,14 @@
   justify-content: start;
 }
 
+.players-flex-between {
+  display        : flex;
+  flex-flow      : column;
+  align-items    : center;
+  margin         : 20px 0;
+  justify-content: start;
+}
+
 .quotes-flex-between {
   display          : flex;
   height           : 370px;
@@ -117,19 +133,67 @@
   position         : relative;
 }
 
+.players-info {
+  display          : flex;
+  width            : 70%;
+  margin-top       : -10px;
+  flex-flow        : column;
+  align-items      : center;
+  justify-content  : center;
+  background-image : url('/static/aron/img/players_rect.svg');
+  background-repeat: no-repeat;
+  background-size  : 100%;
+  position         : relative;
+}
+
+.player-details {
+  display        : flex;
+  width          : 80%;
+  margin-left    : -20px;
+  flex-flow      : row;
+  align-items    : flex-start;
+  justify-content: start;
+}
+
+.player-name {
+  font-weight   : 900;
+  margin-left   : -20px;
+  margin-bottom : 5px;
+  font-size     : 20px;
+  line-height   : 25px;
+  text-transform: uppercase;
+}
+
+.price {
+  font-weight   : 900;
+  font-size     : 18px;
+  line-height   : 25px;
+  margin        : 10px 0px 0px 40px;
+  text-transform: uppercase;
+  color         : #FFFFFF;
+}
+
+.percent {
+  font-size     : 12px;
+  line-height   : 24px;
+  margin        : 0px;
+  text-transform: uppercase;
+  z-index       : 1;
+}
+
+.chart {
+  height     : 40px;
+  margin-left: -10px;
+}
+
 .customer-name {
-  position               : absolute;
-  top                    : 0px;
-  left                   : 180px;
-  color                  : aliceblue;
-  font-weight            : 900;
-  font-size              : 24px;
-  line-height            : 30px;
-  text-transform         : uppercase;
-  background             : linear-gradient(334.16deg, #9A732B 0%, #F0BD51 13%, #FEEC6E 31%, #DD9C2B 68%, #FCD755 85%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip        : text;
+  position      : absolute;
+  top           : 0px;
+  left          : 180px;
+  font-weight   : 900;
+  font-size     : 24px;
+  line-height   : 30px;
+  text-transform: uppercase;
 }
 
 .quote-date {
@@ -156,6 +220,11 @@
   justify-content: space-between;
   align-items    : center;
   position       : absolute;
+}
+
+.buttons {
+  margin-bottom: -20px;
+  margin-left  : -30px;
 }
 
 .like {
@@ -230,6 +299,10 @@
   width: 60%;
 }
 
+.players-img {
+  height: 200px;
+}
+
 .quotes-img {
   position: absolute;
   top     : -50px;
@@ -246,7 +319,7 @@
 }
 
 .choice-img img {
-  width: 100%;
+  width: 90%;
 }
 
 .countdown-text {
@@ -277,6 +350,11 @@
 
 .learn-button {
   display: contents;
+}
+
+.btn img {
+  margin-top: 15px;
+  width     : 80px;
 }
 
 .countdown-button {
@@ -366,6 +444,16 @@
   .flex-between {
     justify-content: start;
     width          : 50%;
+  }
+
+  .players-flex-between {
+    align-items    : initial;
+    justify-content: start;
+    width          : 50%;
+  }
+
+  .players-info {
+    width: 85%;
   }
 
   .quotes-flex-between {
@@ -598,5 +686,13 @@
   .comment {
     bottom: 15%;
     left  : 160px;
+  }
+
+  .players-info {
+    width: 80%;
+  }
+
+  .btn img {
+    margin-top: 5px;
   }
 }
