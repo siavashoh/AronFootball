@@ -10,6 +10,10 @@
   background-clip        : text;
 }
 
+body {
+  margin: 0;
+}
+
 .upto {
   position      : absolute;
   top           : 50px;
@@ -89,29 +93,34 @@
   padding: 2% 4%;
 }
 
+.features_section {
+  padding: 0 4%;
+}
+
 .players-section {
   padding   : 2% 4%;
-  margin-top: -100px;
+  margin-top: -110px;
 }
 
 .steps-title {
   font-weight: 900;
-  font-size  : 44px;
-  line-height: 58px;
+  font-size  : 34px;
+  line-height: 48px;
   color      : #ffffff;
   margin     : 0;
   padding    : 0;
 }
 
 .steps-yellow-title {
-  font-size: 54px;
+  font-size: 48px;
 }
 
 .features-title {
   font-weight: 900;
   font-size  : 38px;
-  line-height: 58px;
+  line-height: 40px;
   color      : #ffffff;
+  margin     : 10px 0;
 }
 
 .features-yellow-title {
@@ -139,14 +148,13 @@
 .normal-text {
   color      : #ffffff;
   font-size  : 22px;
-  line-height: 39px;
+  line-height: 28px;
 }
 
 .flex-responsive {
   display        : flex;
   flex-wrap      : wrap;
   justify-content: center;
-  margin-top     : 2%;
 }
 
 .quotes-flex-responsive {
@@ -182,8 +190,8 @@
   display        : flex;
   flex-flow      : row;
   align-items    : center;
-  margin         : 20px 0;
   justify-content: start;
+  margin-top     : 10px;
 }
 
 .players-flex-between {
@@ -211,7 +219,7 @@
 
 .players-info {
   display          : flex;
-  width            : 70%;
+  width            : 60%;
   margin-top       : -10px;
   flex-flow        : column;
   align-items      : center;
@@ -235,30 +243,30 @@
   font-weight   : 900;
   margin-left   : -20px;
   margin-bottom : 5px;
-  font-size     : 20px;
-  line-height   : 25px;
+  font-size     : 18px;
+  line-height   : 20px;
   text-transform: uppercase;
 }
 
 .price {
   font-weight   : 900;
-  font-size     : 18px;
-  line-height   : 25px;
+  font-size     : 16px;
+  line-height   : 20px;
   margin        : 10px 0px 0px 40px;
   text-transform: uppercase;
   color         : #ffffff;
 }
 
 .percent {
-  font-size     : 12px;
+  font-size     : 10px;
   line-height   : 24px;
   margin        : 0px;
   text-transform: uppercase;
-  z-index       : 1;
+  z-index       : 999;
 }
 
 .chart {
-  height     : 40px;
+  height     : 30px;
   margin-left: -10px;
 }
 
@@ -348,7 +356,7 @@
   flex-flow      : row;
   align-items    : center;
   margin         : 10px 0;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 .choice-section {
@@ -380,11 +388,11 @@
 }
 
 .img {
-  width: 60%;
+  width: 50%;
 }
 
 .players-img {
-  height: 200px;
+  height: 180px;
 }
 
 .quotes-img {
@@ -395,7 +403,9 @@
 }
 
 .learn-img {
-  width: 45%;
+  width      : 35%;
+  margin-left: 150px;
+  margin-top : -20px;
 }
 
 .choice-img {
@@ -429,7 +439,6 @@
 
 .intro-button-img {
   width      : 50%;
-  margin-top : 10px;
   margin-left: -10px;
 }
 
@@ -497,10 +506,65 @@
   display: contents;
 }
 
+.background {
+  position: absolute;
+  top     : 0%;
+  left    : 0%;
+  z-index : -1;
+}
+
+.first-img {
+  width: 98vw;
+}
+
+.second-img {
+  width   : 98vw;
+  position: absolute;
+  top     : 30%;
+  left    : 0%;
+}
+
+.third-img {
+  width   : 98vw;
+  position: absolute;
+  top     : 50%;
+  left    : 0%;
+}
+
+.forth-img {
+  width   : 98vw;
+  position: absolute;
+  top     : 105%;
+  left    : 0%;
+}
+
+.main-back-img {
+  position: absolute;
+  left    : 0%;
+  top     : 0%;
+  width   : 50%;
+}
+
+.clock-img {
+  position: absolute;
+  right   : 15%;
+  top     : 102%;
+  width   : 30%;
+}
+
 @media (min-width: 481px) and (max-width: 768px) {
   .header {
     justify-content: flex-end;
     padding        : 5% 5% 0 2%;
+  }
+
+  .learn-section {
+    flex-flow      : column;
+    justify-content: center;
+  }
+
+  .players-img {
+    margin-right: 50px;
   }
 
   .upto {
@@ -591,17 +655,13 @@
     flex: 0 50%;
   }
 
-  .quotes-flex-between {
-    height: 300px;
-  }
-
   .like {
-    bottom: 10px;
+    bottom: 20px;
     left  : 90px;
   }
 
   .comment {
-    bottom: 10px;
+    bottom: 20px;
     left  : 220px;
   }
 
@@ -647,21 +707,20 @@
   }
 
   .players-info {
-    width: 85%;
+    width: 70%;
   }
 
   .quotes-flex-between {
     justify-content: start;
     width          : 50%;
-  }
-
-  .learn-section {
-    flex-flow: column;
+    height         : 310px;
   }
 
   .learn-img {
-    width     : 100%;
-    margin-top: -50px;
+    width      : 80%;
+    margin-top : -50px;
+    margin-left: 0;
+
   }
 
   .features-title {
@@ -699,6 +758,30 @@
 
   .choice-img {
     width: 80%;
+  }
+
+  .first-img {
+    width: 100vw;
+  }
+
+  .second-img {
+    width: 100vw;
+    top  : 50%;
+  }
+
+  .third-img {
+    width: 100vw;
+    top  : 160%;
+  }
+
+  .forth-img {
+    width: 100vw;
+    top  : 250%;
+  }
+
+  .clock-img {
+    top  : 240%;
+    width: 30%;
   }
 }
 
@@ -804,16 +887,14 @@
     justify-content: start;
   }
 
-  .quotes-flex-between {
-    justify-content: start;
-  }
-
   .learn-section {
-    flex-flow: column;
+    flex-flow      : column;
+    justify-content: center;
   }
 
   .learn-img {
-    width: 100%;
+    width      : 100%;
+    margin-left: 0;
   }
 
   .features-title {
@@ -871,10 +952,10 @@
 
   .quote {
     width      : 65%;
-    font-size  : 14px;
+    font-size  : 16px;
     line-height: 15px;
     margin-left: 50px;
-    margin-top : 65px;
+    margin-top : 80px;
   }
 
   .customer-name {
@@ -892,7 +973,7 @@
 
   .quotes-flex-responsive div {
     flex  : 60%;
-    margin: 10px 10px;
+    margin: 20px 10px;
   }
 
   .quotes-flex-responsive {
@@ -900,12 +981,13 @@
   }
 
   .quotes-flex-between {
-    height: 290px;
+    height         : 290px;
+    justify-content: start;
   }
 
   .like {
-    bottom: 15%;
-    left  : 60px;
+    bottom: 10px;
+    left  : 80px;
   }
 
   .reactions {
@@ -913,8 +995,8 @@
   }
 
   .comment {
-    bottom: 15%;
-    left  : 160px;
+    bottom: 10px;
+    left  : 180px;
   }
 
   .players-info {
@@ -942,9 +1024,10 @@
   }
 
   .intro-info {
-    margin-left: 0px;
-    margin-top : -140px;
-    text-align : right;
+    margin-left : 0px;
+    margin-right: 5px;
+    margin-top  : -140px;
+    text-align  : right;
   }
 
   .intro-button-img {
@@ -975,5 +1058,42 @@
   .upto span {
     font-size  : 38px;
     line-height: 50px;
+  }
+
+  .first-img {
+    width: 100vw;
+  }
+
+  .second-img {
+    width: 100vw;
+    top  : 130%;
+  }
+
+  .third-img {
+    width: 100vw;
+    top  : 350%;
+  }
+
+  .forth-img {
+    width: 100vw;
+    top  : 495%;
+  }
+
+  .clock-img {
+    top  : 456%;
+    right: 5%;
+    width: 45%;
+  }
+
+  .player-name {
+    margin-bottom: 10px;
+  }
+
+  .price {
+    margin-bottom: 10px;
+  }
+
+  .buttons {
+    margin-bottom: -10px;
   }
 }
