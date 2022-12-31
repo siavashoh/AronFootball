@@ -10,8 +10,75 @@
   background-clip        : text;
 }
 
+.upto {
+  position      : absolute;
+  top           : 50px;
+  font-weight   : 900;
+  font-style    : italic;
+  font-size     : 40px;
+  line-height   : 48px;
+  text-align    : right;
+  text-transform: uppercase;
+  left          : 28%;
+  color         : #FFFFFF;
+}
+
+.upto span {
+  font-size  : 54px;
+  line-height: 68px;
+}
+
+.header {
+  display        : flex;
+  padding        : 2% 5% 0 2%;
+  align-items    : center;
+  flex-flow      : row;
+  justify-content: space-between;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.languages {
+  display    : flex;
+  align-items: center;
+  flex-flow  : row;
+  text-align : center;
+  font-weight: 900;
+}
+
+.languages p {
+  margin: 0;
+}
+
+.logo {
+  width: 180px;
+}
+
 .negative {
   color: #ff0000;
+}
+
+.parallelogram {
+  width          : 60px;
+  height         : 30px;
+  color          : white;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+  border         : 1px solid #FEEC6E;
+  transform      : matrix(-1, 0, 0, 1, 0, 0);
+  transform      : skew(-25deg);
+}
+
+.enable {
+  background: #FEEC6E;
+  color     : black;
 }
 
 .Positive {
@@ -431,6 +498,31 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    justify-content: flex-end;
+    padding        : 5% 5% 0 2%;
+  }
+
+  .upto {
+    top        : 80px;
+    font-size  : 30px;
+    line-height: 38px;
+    left       : 30%;
+  }
+
+  .upto span {
+    font-size  : 50px;
+    line-height: 68px;
+  }
+
+  .languages {
+    margin-left: 80px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
   .flex-responsive div {
     flex: 0 50%;
   }
@@ -615,6 +707,34 @@
     flex: 60%;
   }
 
+  .header {
+    flex-flow      : column;
+    justify-content: flex-end;
+    align-items    : flex-end;
+    padding        : 5% 5% 0 2%;
+  }
+
+  .parallelogram {
+    width : 50px;
+    height: 25px;
+  }
+
+  .languages {
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .show {
+    display: none;
+  }
+
+  .hide {
+    display: block;
+  }
+
   .choice-title {
     font-size  : 20px;
     line-height: 30px;
@@ -720,6 +840,7 @@
 
   .intro-section {
     align-items: start;
+    margin-top : -120px;
   }
 
   .countdown-img {
@@ -842,5 +963,17 @@
 
   .players-section {
     margin-top: 0px;
+  }
+
+  .upto {
+    top        : 0px;
+    font-size  : 22px;
+    line-height: 32px;
+    left       : 28%;
+  }
+
+  .upto span {
+    font-size  : 38px;
+    line-height: 50px;
   }
 }
