@@ -32,7 +32,7 @@ body {
   line-height: 68px;
 }
 
-.header {
+header {
   display        : flex;
   padding        : 2% 5% 0 2%;
   align-items    : center;
@@ -192,6 +192,15 @@ body {
   align-items    : center;
   justify-content: start;
   margin-top     : 10px;
+  position       : relative;
+}
+
+.steps-back {
+  z-index : -1;
+  position: absolute;
+  height  : 80%;
+  top     : 10%;
+  left    : 40%;
 }
 
 .players-flex-between {
@@ -553,7 +562,7 @@ body {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .header {
+  header {
     justify-content: flex-end;
     padding        : 5% 5% 0 2%;
   }
@@ -790,7 +799,7 @@ body {
     flex: 60%;
   }
 
-  .header {
+  header {
     flex-flow      : column;
     justify-content: flex-end;
     align-items    : flex-end;
