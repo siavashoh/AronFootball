@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .upto {
@@ -207,22 +208,22 @@ header {
   display        : flex;
   flex-flow      : column;
   align-items    : center;
-  margin         : 20px 0;
+  margin         : 20px 10px;
   justify-content: start;
 }
 
 .quotes-flex-between {
   display          : flex;
-  height           : 370px;
+  height           : 320px;
   flex-flow        : column;
   align-items      : center;
   margin           : 40px 0;
   justify-content  : center;
-  padding-right    : 50px;
-  margin-left      : -50px;
+  padding-right    : 40px;
+  margin-left      : -40px;
   background-image : url("/static/aron/img/Rectangle.svg");
   background-repeat: no-repeat;
-  background-size  : 100% auto;
+  background-size  : contain;
   position         : relative;
 }
 
@@ -250,9 +251,9 @@ header {
 
 .player-name {
   font-weight   : 900;
-  margin-left   : -20px;
+  margin-left   : -10px;
   margin-bottom : 5px;
-  font-size     : 18px;
+  font-size     : 1.5vw;
   line-height   : 20px;
   text-transform: uppercase;
 }
@@ -282,9 +283,9 @@ header {
 .customer-name {
   position      : absolute;
   top           : 0px;
-  left          : 180px;
+  left          : 38%;
   font-weight   : 900;
-  font-size     : 24px;
+  font-size     : 1.4rem;
   line-height   : 30px;
   text-transform: uppercase;
 }
@@ -292,18 +293,18 @@ header {
 .quote-date {
   position      : absolute;
   top           : 20px;
-  left          : 320px;
+  left          : 65%;
   color         : aliceblue;
-  font-size     : 22px;
+  font-size     : 1.2rem;
   line-height   : 30px;
   text-transform: uppercase;
 }
 
 .quote {
   width      : 65%;
-  font-size  : 16px;
-  margin-left: 60px;
-  margin-top : 30px;
+  font-size  : 1vw;
+  margin-left: 30px;
+  margin-top : 20px;
   line-height: 25px;
 }
 
@@ -321,13 +322,13 @@ header {
 }
 
 .like {
-  bottom: 30px;
-  left  : 110px;
+  bottom: 10%;
+  left  : 8vw;
 }
 
 .comment {
-  bottom: 30px;
-  left  : 260px;
+  bottom: 10%;
+  left  : 18vw;
 }
 
 .likes-count {
@@ -407,7 +408,7 @@ header {
 .quotes-img {
   position: absolute;
   top     : -50px;
-  left    : 70px;
+  left    : 10%;
   height  : 120px;
 }
 
@@ -517,31 +518,32 @@ header {
 
 .background {
   position: absolute;
+  width: 100vw;
   top     : 0%;
   left    : 0%;
   z-index : -1;
 }
 
 .first-img {
-  width: 98vw;
+  width: 100vw;
 }
 
 .second-img {
-  width   : 98vw;
+  width   : 100vw;
   position: absolute;
   top     : 30%;
   left    : 0%;
 }
 
 .third-img {
-  width   : 98vw;
+  width   : 100vw;
   position: absolute;
   top     : 50%;
   left    : 0%;
 }
 
 .forth-img {
-  width   : 98vw;
+  width   : 100vw;
   position: absolute;
   top     : 105%;
   left    : 0%;
@@ -561,7 +563,7 @@ header {
   width   : 30%;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 980px) {
   header {
     justify-content: flex-end;
     padding        : 5% 5% 0 2%;
@@ -640,10 +642,10 @@ header {
   }
 
   .quote {
-    width      : 70%;
+    width      : 65%;
     font-size  : 16px;
-    margin-left: 80px;
-    margin-top : 80px;
+    margin-left: 30px;
+    margin-top : 20%;
     line-height: 20px;
   }
 
@@ -665,12 +667,12 @@ header {
   }
 
   .like {
-    bottom: 20px;
+    bottom: 10%;
     left  : 90px;
   }
 
   .comment {
-    bottom: 20px;
+    bottom: 10%;
     left  : 220px;
   }
 
@@ -792,9 +794,13 @@ header {
     top  : 240%;
     width: 30%;
   }
+    .player-name {
+    margin-bottom: 5px;
+    font-size    : 16px;
+  }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 500px) {
   .flex-responsive div {
     flex: 60%;
   }
@@ -961,10 +967,10 @@ header {
 
   .quote {
     width      : 65%;
-    font-size  : 16px;
+    font-size  : 14px;
     line-height: 15px;
     margin-left: 50px;
-    margin-top : 80px;
+    margin-top : 25%;
   }
 
   .customer-name {
@@ -995,7 +1001,7 @@ header {
   }
 
   .like {
-    bottom: 10px;
+    bottom: 10%;
     left  : 80px;
   }
 
@@ -1004,7 +1010,7 @@ header {
   }
 
   .comment {
-    bottom: 10px;
+    bottom: 10%;
     left  : 180px;
   }
 
@@ -1095,7 +1101,8 @@ header {
   }
 
   .player-name {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
   }
 
   .price {
