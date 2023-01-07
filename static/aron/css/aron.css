@@ -29,8 +29,9 @@ body {
 }
 
 .upto span {
-  font-size  : 54px;
-  line-height: 68px;
+  font-size    : 54px;
+  line-height  : 68px;
+  padding-right: 10px;
 }
 
 header {
