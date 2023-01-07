@@ -829,11 +829,13 @@ header {
   }
 
   .countdown-text {
-    font-size: 28px;
+    font-size  : 3.5vw;
+    line-height: 3.5vw;
   }
 
   .countdown-word {
-    font-size: 32px;
+    font-size  : 4.5vw;
+    line-height: 4.5vw;
   }
 
   .choice-img {
@@ -1030,11 +1032,13 @@ header {
   }
 
   .countdown-text {
-    font-size: 24px;
+    font-size  : 6vw;
+    line-height: 6vw;
   }
 
   .countdown-word {
-    font-size    : 28px;
+    font-size    : 8vw;
+    line-height  : 8vw;
     margin-top   : -20px;
     margin-bottom: 10px;
   }
