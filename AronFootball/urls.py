@@ -10,14 +10,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("aron.urls", namespace="aron")),
 ]
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-urlpatterns += staticfiles_urlpatterns()
 urlpatterns += [
-    re_path(
-        r"^media/(?P<path>.*)$",
-        serve,
-        {
-            "document_root": settings.MEDIA_ROOT,
-        },
-    ),
+    re_path(r"^media/(?P<path>.*)$", serve, {"document_root": settings.MEDIA_ROOT}),
+    re_path(r"^static/(?P<path>.*)$", serve, {"document_root": settings.STATIC_ROOT}),
 ]
