@@ -1,14 +1,22 @@
-{%load i18n%}
+{%load i18n%} {% get_current_language as LANGUAGE_CODE %}
 
 <div class="section">
   <p class="choice-title">
     {% translate "I want to trade on players' performance from" %}
   </p>
   <div class="choice-section">
-    <a class="choice-img" href="https://client.arongroups.co/register/"><img
-        src="/static/aron/img/football_button.png" /></a>
-    <a class="choice-img" href="https://client.arongroups.co/register/"><img
-        src="/static/aron/img/cricket_button.png" /></a>
+    <a class="choice-img" href="https://client.arongroups.co/register/"
+      >{% if LANGUAGE_CODE == 'en' %}<img
+        src="/static/aron/img/football_button.png"
+      />{% else %}<img src="/static/aron/img/football_button_hin.png" />{% endif
+      %}</a
+    >
+    <a class="choice-img" href="https://client.arongroups.co/register/"
+      >{% if LANGUAGE_CODE == 'en' %}<img
+        src="/static/aron/img/cricket_button.png"
+      />{% else %}<img src="/static/aron/img/cricket_button_hin.png" />{% endif
+      %}</a
+    >
   </div>
   <p class="copyright">Copyright © 2023 Aron Football</p>
 </div>

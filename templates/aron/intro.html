@@ -1,5 +1,4 @@
-{%load i18n%}
-
+{%load i18n%} {% get_current_language as LANGUAGE_CODE %}
 <div class="intro-section">
   <p class="upto">
     {% translate "get" %}<br />
@@ -15,11 +14,18 @@
     </p>
     <p class="players-text">{% translate "football players" %}</p>
     <p class="join-text">
-      {% translate "Join now and get" %}<span class="gradient-color"> 50% </span><br />
+      {% translate "Join now and get" %}<span class="gradient-color"> 50% </span
+      ><br />
       {% translate "bonus on your first deposit" %}
     </p>
     <a href="https://client.arongroups.co/register/"
-      ><img class="intro-button-img" src="/static/aron/img/join.svg"
-    /></a>
+      >{% if LANGUAGE_CODE == 'en' %}<img
+        class="intro-button-img"
+        src="/static/aron/img/join.svg"
+      />{% else %}<img
+        class="intro-button-img"
+        src="/static/aron/img/join_hin.svg"
+      />{% endif %}</a
+    >
   </div>
 </div>

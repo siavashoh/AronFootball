@@ -1,11 +1,12 @@
-{%load i18n%}
+{%load i18n%} {% get_current_language as LANGUAGE_CODE %}
 
 <div class="section">
   <p class="steps-title">
     {% translate "Earn from your passion in" %}
     <br />
     <span class="steps-yellow-title gradient-color">
-      {% translate "3 simple steps" %}</span>
+      {% translate "3 simple steps" %}</span
+    >
   </p>
   <div class="flex-responsive">
     <div class="flex-between">
@@ -33,9 +34,20 @@
   </div>
   <div class="learn-section">
     <p class="normal-text learn-text">
-      {% blocktranslate %}How it works: Our algorithms create tradable indices and assign a monetary value to sports people. Over 500 data points are evaluated and monitored in real-time throughout the pricing engine for each player, allowing you to manage and trade options on specific players you follow.{% endblocktranslate %}
+      {% blocktranslate %}How it works: Our algorithms create tradable indices
+      and assign a monetary value to sports people. Over 500 data points are
+      evaluated and monitored in real-time throughout the pricing engine for
+      each player, allowing you to manage and trade options on specific players
+      you follow.{% endblocktranslate %}
     </p>
-    <a class="learn-button" href="https://client.arongroups.co/register/"><img class="learn-img"
-        src="/static/aron/img/learn_more.png" /></a>
+    <a class="learn-button" href="https://client.arongroups.co/register/"
+      >{% if LANGUAGE_CODE == 'en' %}<img
+        class="learn-img"
+        src="/static/aron/img/learn_more.png"
+      />{% else %}<img
+        class="learn-img"
+        src="/static/aron/img/learn_more_hin.png"
+      />{% endif %}</a
+    >
   </div>
 </div>

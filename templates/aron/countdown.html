@@ -1,20 +1,30 @@
-{%load i18n%}
+{%load i18n%} {% get_current_language as LANGUAGE_CODE %}
 
 <div class="section">
   <p class="countdown-title">
     {% translate "Join now." %}
-    <span class="countdown-yellow-title gradient-color">{% translate "A 50% bonus" %}</span>
+    <span class="countdown-yellow-title gradient-color"
+      >{% translate "A 50% bonus" %}</span
+    >
     <br />{% translate "on your" %}
     <span class="countdown-yellow-title gradient-color">
-      {% translate "first deposit is waiting!" %} </span>
+      {% translate "first deposit is waiting!" %}
+    </span>
   </p>
   <div class="countdown-section">
     <img class="countdown-img" src="/static/aron/img/countdown_pic.png" />
     <div class="countdown-info">
       <p class="countdown-word gradient-color">{% translate "Countdown" %}</p>
       <p id="countdown" class="countdown-text"></p>
-      <a class="countdown-button" href="https://client.arongroups.co/register/"><img class="countdown-button-img"
-          src="/static/aron/img/claim_bonus.svg" /></a>
+      <a class="countdown-button" href="https://client.arongroups.co/register/"
+        >{% if LANGUAGE_CODE == 'en' %}<img
+          class="countdown-button-img"
+          src="/static/aron/img/claim_bonus.svg"
+        />{% else %}<img
+          class="countdown-button-img"
+          src="/static/aron/img/claim_bonus_hin.svg"
+        />{% endif %}</a
+      >
     </div>
   </div>
 </div>
