@@ -1,22 +1,20 @@
+{%load i18n%}
+
 <div class="section">
   <p class="countdown-title">
-    Join now.
-    <span class="countdown-yellow-title gradient-color">A 50% bonus</span>
-    <br />on your
+    {% translate "Join now." %}
+    <span class="countdown-yellow-title gradient-color">{% translate "A 50% bonus" %}</span>
+    <br />{% translate "on your" %}
     <span class="countdown-yellow-title gradient-color">
-      first deposit is waiting!</span
-    >
+      {% translate "first deposit is waiting!" %} </span>
   </p>
   <div class="countdown-section">
     <img class="countdown-img" src="/static/aron/img/countdown_pic.png" />
     <div class="countdown-info">
-      <p class="countdown-word gradient-color">Countdown</p>
+      <p class="countdown-word gradient-color">{% translate "Countdown" %}</p>
       <p id="countdown" class="countdown-text"></p>
-      <a class="countdown-button" href="https://client.arongroups.co/register/"
-        ><img
-          class="countdown-button-img"
-          src="/static/aron/img/claim_bonus.svg"
-      /></a>
+      <a class="countdown-button" href="https://client.arongroups.co/register/"><img class="countdown-button-img"
+          src="/static/aron/img/claim_bonus.svg" /></a>
     </div>
   </div>
 </div>

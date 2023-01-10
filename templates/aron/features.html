@@ -1,44 +1,50 @@
+{%load i18n%}
+
 <div class="features_section">
   <p class="features-title">
-    Why <span class="features-yellow-title gradient-color">Aron Football</span> is worth trying:
+    {% translate "Why" %}
+    <span class="features-yellow-title gradient-color">
+      {% translate "Aron Football" %}
+    </span>
+    {% translate "is worth trying" %}:
   </p>
   <div class="features-flex-responsive">
     <div class="flex-column">
       <img class="img" src="/static/aron/img/players.svg" />
-      <p class="normal-text">Over 1300<br>
-        football players<br>
-        to choose from</p>
+      <p class="normal-text over-1300">
+        {% translate "Over 1300 football players to choose from" %}
+      </p>
     </div>
     <div class="flex-column">
       <img class="img" src="/static/aron/img/actives.svg" />
       <p class="normal-text">
-        35,927 active<br>
-        traders daily
+        {% translate "35,927 active" %}<br>
+        {% translate "traders daily" %}
       </p>
     </div>
     <div class="flex-column">
       <img class="img" src="/static/aron/img/daily_transactions.svg" />
       <p class="normal-text">
-        1,2 Bn Dollars worth<br>
-        daily transactions
+        {% translate "1,2 Bn Dollars worth" %}<br>
+        {% translate "daily transactions" %}
       </p>
     </div>
     <div class="flex-column">
       <img class="img" src="/static/aron/img/deposit.svg" />
-      <p class="normal-text">Instant deposit<br>
-        and withdrawals</p>
+      <p class="normal-text">{% translate "Instant deposit" %}<br>
+        {% translate "and withdrawals" %}</p>
     </div>
     <div class="flex-column">
       <img class="img" src="/static/aron/img/support.svg" />
       <p class="normal-text">
-        24/7 support<br>
-        service
+        24/7 {% translate "support" %}<br>
+        {% translate "service" %}
       </p>
     </div>
     <div class="flex-column">
       <img class="img" src="/static/aron/img/transparency.svg" />
       <p class="normal-text">
-        Full transparency
+        {% translate "Full transparency" %}
       </p>
     </div>
   </div>
