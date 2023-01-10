@@ -1,6 +1,7 @@
 {%load i18n%} {% get_current_language as LANGUAGE_CODE %}
 
 <div class="section">
+  {% if LANGUAGE_CODE == 'en' %}
   <p class="steps-title">
     {% translate "Earn from your passion in" %}
     <br />
@@ -8,6 +9,15 @@
       {% translate "3 simple steps" %}</span
     >
   </p>
+  {% else %}
+  <p class="steps-title">
+    <span class="steps-yellow-title gradient-color">
+      {% translate "3 simple steps" %}</span
+    ><br />
+    {% translate "Earn from your passion in" %}
+  </p>
+  {% endif %}
+
   <div class="flex-responsive">
     <div class="flex-between">
       <img class="img" src="/static/aron/img/register.svg" />

@@ -1,6 +1,7 @@
 {%load i18n%} {% get_current_language as LANGUAGE_CODE %}
 
 <div class="section">
+  {% if LANGUAGE_CODE == 'en' %}
   <p class="countdown-title">
     {% translate "Join now." %}
     <span class="countdown-yellow-title gradient-color"
@@ -11,6 +12,17 @@
       {% translate "first deposit is waiting!" %}
     </span>
   </p>
+  {% else %}
+  <p class="countdown-title">
+    अभी जुड़ें। आपके
+    <span class="countdown-yellow-title gradient-color">पहले डिपॉजिट</span> पर
+    <br />50% का बोनस
+    <span class="countdown-yellow-title gradient-color">
+      आप का. इंतजार कर रहा है!
+    </span>
+  </p>
+  {% endif %}
+
   <div class="countdown-section">
     <img class="countdown-img" src="/static/aron/img/countdown_pic.png" />
     <div class="countdown-info">

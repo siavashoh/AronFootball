@@ -1,10 +1,18 @@
 {%load i18n%} {% get_current_language as LANGUAGE_CODE %}
 <div class="intro-section">
+  {% if LANGUAGE_CODE == 'en' %}
   <p class="upto">
     {% translate "get" %}<br />
     {% translate "up to" %}<br />
     <span class="gradient-color">$500</span>
   </p>
+  {% else %}
+  <p class="upto">
+    <span class="gradient-color">$500</span><br />
+    {% translate "get" %}<br />
+    {% translate "up to" %}
+  </p>
+  {% endif %}
   <img class="intro-img" src="/static/aron/img/main_pic.png" />
   <div class="intro-info">
     <p class="invest-word gradient-color">{% translate "Invest in" %}</p>
