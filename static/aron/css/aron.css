@@ -603,10 +603,19 @@ header {
   width: 213px;
 }
 
+.copyright {
+  color : white;
+  margin: 50px 0px;
+}
+
 @media (min-width: 481px) and (max-width: 980px) {
   header {
     justify-content: flex-end;
     padding        : 5% 5% 0 2%;
+  }
+
+  .copyright {
+    margin-left: 50px;
   }
 
   .btn img {
