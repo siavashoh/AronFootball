@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-10 06:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: templates/aron/choices.html:5
+msgid "I want to trade on players' performance from"
+msgstr "मुझे खिलाड़ियों के प्रदर्शन पर ट्रेड करना है जो खेलते हैं"
+
+#: templates/aron/countdown.html:5
+msgid "Join now."
+msgstr "अभी जुड़े."
+
+#: templates/aron/countdown.html:6
+#, python-format
+msgid "A 50% bonus"
+msgstr "50% का बोनस"
+
+#: templates/aron/countdown.html:7
+msgid "on your"
+msgstr "तुम्हारे ऊपर"
+
+#: templates/aron/countdown.html:9
+msgid "first deposit is waiting!"
+msgstr "पहली जमा राशि प्रतीक्षा कर रही है!"
+
+#: templates/aron/countdown.html:14
+msgid "Countdown"
+msgstr "Countdown"
+
+#: templates/aron/features.html:5
+msgid "Why"
+msgstr " "
+
+#: templates/aron/features.html:7
+msgid "Aron Football"
+msgstr "Aron Football"
+
+#: templates/aron/features.html:9
+msgid "is worth trying"
+msgstr "को आजमाना क्यों सही है"
+
+#: templates/aron/features.html:15
+msgid "Over 1300 football players to choose from"
+msgstr "चुनने के लिए यहाँ 1300 से अधिक खिलाड़ी हैं"
+
+#: templates/aron/features.html:21
+msgid "35,927 active"
+msgstr "हर दिन 35927"
+
+#: templates/aron/features.html:22
+msgid "traders daily"
+msgstr "एक्टिव ट्रेडर हैं"
+
+#: templates/aron/features.html:28
+msgid "1,2 Bn Dollars worth"
+msgstr "हर दिन 1.2 बिलियन"
+
+#: templates/aron/features.html:29
+msgid "daily transactions"
+msgstr "डॉलर के मूल्य का ट्रांजेक्शन"
+
+#: templates/aron/features.html:34
+msgid "Instant deposit"
+msgstr "तुरंत डिपॉजिट"
+
+#: templates/aron/features.html:35
+msgid "and withdrawals"
+msgstr "और विड्राल"
+
+#: templates/aron/features.html:40
+msgid "support"
+msgstr "सपोर्ट"
+
+#: templates/aron/features.html:41
+msgid "service"
+msgstr "सेवा"
+
+#: templates/aron/features.html:47
+msgid "Full transparency"
+msgstr "पूरी ईमानदारी"
+
+#: templates/aron/intro.html:5
+msgid "get"
+msgstr "तक की"
+
+#: templates/aron/intro.html:6
+msgid "up to"
+msgstr "राशि पाएँ"
+
+#: templates/aron/intro.html:11
+msgid "Invest in"
+msgstr "अपने पसंदीदा"
+
+#: templates/aron/intro.html:13
+msgid "the performance"
+msgstr "फुटबॉल खिलाड़ियों"
+
+#: templates/aron/intro.html:14
+msgid "of your favorite"
+msgstr "के प्रदर्शन"
+
+#: templates/aron/intro.html:16
+msgid "football players"
+msgstr "में इंवेस्ट कीजिए"
+
+#: templates/aron/intro.html:18
+msgid "Join now and get"
+msgstr "अपने पहले डिपॉजिट पर"
+
+#: templates/aron/intro.html:19
+msgid "bonus on your first deposit"
+msgstr "का बोनस पाने के लिए अभी जुड़िए"
+
+#: templates/aron/quotes.html:5
+msgid "What our"
+msgstr "जानिए हमारे"
+
+#: templates/aron/quotes.html:7
+msgid "happy traders"
+msgstr "हैप्पी ट्रेडर्स"
+
+#: templates/aron/quotes.html:9
+msgid "say"
+msgstr "क्या कहते हैं"
+
+#: templates/aron/quotes.html:20
+msgid ""
+"When markets became turbulent, I decided to diversify my investments by "
+"focusing on the performance of football players. Messi and Ronaldo helped me "
+"double my funds. See for yourself!"
+msgstr "जब मार्केट में भारी उतार-चढ़ाव आया था, तब मैंने फुटबॉल खिलाड़ियों के प्रदर्शन पर फोकस करते हुए अपने इंवेस्टमेंट को अलग-अलग जगहों पर लगाने का फैसला किया। मेसी और रोनाल्डो की मदद से मेरे फंड दोगुने हो गए। आप खुद देख लें!"
+
+#: templates/aron/quotes.html:36
+msgid ""
+"Guys, you are awesome! Keep up the amazing work and try to include more "
+"players from Latin America - there are lots of burgeoning talents! My tip is "
+"that you focus on young players."
+msgstr "मैंने कभी सपने में भी किसी फुटबॉल टीम का साथी बनने के बारे में नहीं सोचा था। इस सर्विस ने प्रोजेक्ट किए गए खिलाड़ियों को पहचानने की क्षमता देकर मेरी आंखे खोल दी और मैंने ट्रेड ऐसे किए हैं मानों मैं कोई माहिर ट्रेडर हूँ।"
+
+#: templates/aron/quotes.html:52
+msgid ""
+"I never allowed myself to dream of being a scout for a football team. This "
+"service has opened my eyes to the ability to spot projected players and make "
+"trades as if I were a pro."
+msgstr "फुटबॉल खिलाड़ियों के प्रदर्शन पर मिलने वाले सभी ट्रेडिंग अवसरों के बारे में थोड़े में बताना बहुत मुश्किल है। आपको खुद से आजमाना चाहिए। इसके अलावा, Aron Football पहले डिपॉजिट पर तुरंत ही एक 50% का बोनस देता है। इससे ना चूकें!"
+
+#: templates/aron/quotes.html:68
+msgid ""
+"Rather than simply betting on sports, Aron Football offers a unique approach "
+"to capitalizing on your expertise in sports by making consistent profits. "
+"Way to go, Aron!"
+msgstr "स्पोर्ट्स पर बेटिंग करने के आम तरीके के बजाए, लगातार फायदा बनाने के चलते Aron Football स्पोर्ट्स में आपकी विशेषज्ञता को पैसों में बदलने का एक खास तरीका देता है। आगे बढ़ो। Aron!"
+
+#: templates/aron/quotes.html:84
+#, python-format
+msgid ""
+"It is hard to describe shortly all opportunities of trading on football "
+"players' performance. You just need to try it yourself. Moreover, Aron "
+"Football provides a 50%% bonus on the first deposit right now. Don't miss "
+"out!"
+msgstr "दोस्तों, आप तो कमाल के हैं! अपना शानदार काम जारी रखें और कोशिश करके लैटिन अमेरिका के और खिलाड़ियों को शामिल करें - यहाँ बहुत सी उभरती हुई प्रतिभाएँ हैं! मेरी टिप है कि नौजवान खिलाड़ियों पर फोकस रखें।"
+
+#: templates/aron/steps.html:5
+msgid "Earn from your passion in"
+msgstr "अपने पैशन से कमाई करें"
+
+#: templates/aron/steps.html:8
+msgid "3 simple steps"
+msgstr "3 आसान रास्तोंसे"
+
+#: templates/aron/steps.html:13
+msgid "Register"
+msgstr "रजिस्टर करें"
+
+#: templates/aron/steps.html:19
+msgid "Choose"
+msgstr "ट्रेडिंग के लिए"
+
+#: templates/aron/steps.html:20
+msgid "your player"
+msgstr "अपना खिलाड़ी"
+
+#: templates/aron/steps.html:21
+msgid "for trading"
+msgstr "चुनें"
+
+#: templates/aron/steps.html:28
+msgid "Buy low,"
+msgstr "कम में खरीदें,"
+
+#: templates/aron/steps.html:29
+msgid "sell high!"
+msgstr "महंगे में बेचें!"
+
+#: templates/aron/steps.html:36
+msgid ""
+"How it works: Our algorithms create tradable indices and assign a monetary "
+"value to sports people. Over 500 data points are evaluated and monitored in "
+"real-time throughout the pricing engine for each player, allowing you to "
+"manage and trade options on specific players you follow."
+msgstr "यह कैसे काम करता है: हमारा एल्गोरिदम ट्रेड होने वाले इंडेक्स बनाता है और स्पोर्ट्स से जुड़े लोगों की एक कीमत तय करता है। हर खिलाड़ी के लिए पूरे प्राइसिंग इंजन में रियल-टाइम में 500 से अधिक डेटा पॉइंट का आकलन और मॉनीटर किया जाता है, जिससे जिन खास खिलाड़ियों को आप फॉलो करते हैं उनको मैनेज और उनके ट्रेड संबंधी विकल्पों की सुविधा आपको मिले।"
