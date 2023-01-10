@@ -82,6 +82,21 @@ header {
   transform      : skew(-25deg);
 }
 
+.parallelogram a:link {
+  color          : white;
+  text-decoration: none;
+}
+
+.parallelogram a:visited {
+  color          : white;
+  text-decoration: none;
+}
+
+.parallelogram a:active {
+  color          : white;
+  text-decoration: none;
+}
+
 .enable {
   background: #FEEC6E;
   color     : black;

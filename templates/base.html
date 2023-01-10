@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% load i18n %} {% get_current_language as LANGUAGE_CODE %}
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
@@ -22,10 +22,25 @@
   <body class="body" style="position: relative">
     <header>
       <img class="logo show" src="/static/aron/img/logo.svg" />
+      {% if LANGUAGE_CODE == 'en' %}
       <div class="languages">
-        <div class="parallelogram enable"><p>ENG</p></div>
-        <div class="parallelogram"><p>HIN</p></div>
+        <div class="parallelogram enable">
+          <p>ENG</p>
+        </div>
+        <div class="parallelogram">
+          <a href="/hi">
+            <p>HIN</p>
+          </a>
+        </div>
       </div>
+      {% else %}
+      <div class="languages">
+        <div class="parallelogram">
+          <a href="/en"><p>ENG</p></a>
+        </div>
+        <div class="parallelogram enable"><p>HIN</p></div>
+      </div>
+      {% endif %}
       <img class="logo hide" src="/static/aron/img/logo.svg" />
     </header>
     {% block body %} {% endblock %}
