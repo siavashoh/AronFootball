@@ -584,6 +584,10 @@ header {
   width   : 30%;
 }
 
+.over-1300 {
+  width: 213px;
+}
+
 @media (min-width: 481px) and (max-width: 980px) {
   header {
     justify-content: flex-end;
@@ -870,6 +874,10 @@ header {
     margin-bottom: 5px;
     margin-top   : 20px;
     font-size    : 1.8vw;
+  }
+
+  .over-1300 {
+    width: 213px;
   }
 }
 
@@ -1234,5 +1242,9 @@ header {
   .chart {
     height     : 5vw;
     margin-left: -10px;
+  }
+
+  .over-1300 {
+    width: 107px;
   }
 }
