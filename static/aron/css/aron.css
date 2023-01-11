@@ -110,6 +110,10 @@ header {
   padding: 2% 4%;
 }
 
+.countdown-info {
+  min-width: 40vw;
+}
+
 .features_section {
   padding: 0 4%;
 }
@@ -467,7 +471,7 @@ header {
   color         : white;
   font-weight   : 900;
   font-size     : 3vw;
-  line-height   : 3vw;
+  line-height   : 40px;
   text-transform: uppercase;
 }
 
@@ -514,7 +518,7 @@ header {
 .players-text {
   font-weight            : 900;
   font-size              : 4vw;
-  line-height            : 4vw;
+  line-height            : 6vw;
   background             : linear-gradient(334.16deg, #9A732B 0%, #F0BD51 13%, #FEEC6E 31%, #DD9C2B 68%, #FCD755 85%);
   -webkit-text-stroke    : 8px transparent;
   -webkit-background-clip: text;
@@ -858,7 +862,7 @@ header {
 
   .countdown-text {
     font-size  : 3.5vw;
-    line-height: 3.5vw;
+    line-height: 30px;
   }
 
   .countdown-word {
@@ -1065,7 +1069,7 @@ header {
 
   .countdown-text {
     font-size  : 6vw;
-    line-height: 6vw;
+    line-height: 30px;
   }
 
   .countdown-word {
