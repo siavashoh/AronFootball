@@ -40,14 +40,14 @@ INSTALLED_APPS = [
     # local
     "aron",
     # django
-    'compressor',
+    "compressor",
 ]
 
 MIDDLEWARE = [
     # compressing and caching
-    'django.middleware.gzip.GZipMiddleware',
-    'htmlmin.middleware.HtmlMinifyMiddleware',
-    'htmlmin.middleware.MarkRequestMiddleware',
+    "django.middleware.gzip.GZipMiddleware",
+    "htmlmin.middleware.HtmlMinifyMiddleware",
+    "htmlmin.middleware.MarkRequestMiddleware",
     # default
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -131,9 +131,7 @@ if not DEBUG:
 else:
     STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"),)
 
-STATICFILES_FINDERS = (
-    'compressor.finders.CompressorFinder',
-)
+STATICFILES_FINDERS = ("compressor.finders.CompressorFinder",)
 
 
 MEDIA_URL = "/media/"
@@ -151,26 +149,27 @@ LANGUAGES = (
 )
 
 LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
-DEFAULT_CHARSET = 'utf-8'
+DEFAULT_CHARSET = "utf-8"
 
 # caching and compression
 CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211',
+    "default": {
+        "BACKEND": "django.core.cache.backends.memcached.PyMemcacheCache",
+        "LOCATION": "127.0.0.1:11211",
     }
 }
 
 COMPRESS_ENABLED = True
-COMPRESS_CSS_HASHING_METHOD = 'content'
+COMPRESS_CSS_HASHING_METHOD = "content"
+COMPRESS_ROOT = os.path.join(BASE_DIR, "static/")
 COMPRESS_FILTERS = {
-    'css':[
-        'compressor.filters.css_default.CssAbsoluteFilter',
-        'compressor.filters.cssmin.rCSSMinFilter',
+    "css": [
+        "compressor.filters.css_default.CssAbsoluteFilter",
+        "compressor.filters.cssmin.rCSSMinFilter",
     ],
-    'js':[
-        'compressor.filters.jsmin.JSMinFilter',
-    ]
+    "js": [
+        "compressor.filters.jsmin.JSMinFilter",
+    ],
 }
 HTML_MINIFY = True
 KEEP_COMMENTS_ON_MINIFYING = True

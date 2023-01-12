@@ -3,5 +3,6 @@ gunicorn==20.1.0
 requests
 black
 python-memcached==1.59
+pymemcache==4.0.*
 django-compressor==4.3
 django-htmlmin==0.11.*
