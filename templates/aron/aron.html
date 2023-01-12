@@ -1,8 +1,11 @@
 {% extends "../base.html" %}
 {% load static %}
+{% load compress %}
 
 {% block style %}
+{% compress css %}
 <link href="{% static 'aron/css/aron.css' %}" rel="stylesheet" />
+{% endcompress %}
 {% endblock %}
 
 {% block body%}
@@ -17,5 +20,7 @@
 {% endblock %}
 
 {% block javascript %}
+{% compress js %}
 <script type="text/javascript" src="{% static 'aron/js/aron.js' %}"></script>
+{% endcompress %}
 {% endblock %}
