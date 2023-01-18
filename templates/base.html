@@ -1,5 +1,4 @@
 {% load static %} {% load i18n %} {% get_current_language as LANGUAGE_CODE %} 
-{% load compress %}
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
   <head>
@@ -17,12 +16,12 @@
       href="../static/aron/img/favicon-16x16.png"
     />
 
-    {% compress css %}
+
     
     <!-- custom base style -->
     <link href="{% static 'base/css/base.css' %}" rel="stylesheet" />
     
-    {% endcompress %}
+
 
     <!-- FAVICON AND TOUCH ICONS -->
     {% block style %} {% endblock %}
